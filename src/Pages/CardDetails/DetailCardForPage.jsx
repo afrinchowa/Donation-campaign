@@ -4,25 +4,45 @@ const DetailCardForPage = ({ card }) => {
   const { id, title, image, description } = card || {};
 
   const handleAddToDonation = () => {
-    const addedDonationArray = [];
-    const donationItems = JSON.parse(localStorage.getItem("donation"));
+const addedDonationArray =[];
+    const donationItems =JSON.parse(localStorage.getItem('donation'))
 
-    if (!donationItems) {
-      addedDonationArray.push(card)
-      localStorage.setItem("donation", JSON.stringify(addedDonationArray))
-      swal("Good job!", "You Donate Successfully", "success");
-    } else {
-      const isExists = donationItems.find((card) => card.id == id)
+if(!donationItems){
+addedDonationArray.push(card)
+localStorage.setItem('donation', JSON.stringify(addedDonationArray))
+swal("Good job!", "You Donate Successfully", "success");
+}
+else{
+    const isExists =donationItems.find(card => card.id ===id)
 
-      if(!isExists){
-        addedDonationArray.push(...donationItems, card);
-        localStorage.setItem("donation", JSON.stringify(addedDonationArray)); 
-        swal("Good job!", "You Donate Successfully!", "success");
-      }
-      else{
-        swal("Error!", "No Duplicate", "Error");
-      }    
-    }   
+    if(!isExists){
+        addedDonationArray.push(...donationItems,card)
+        localStorage.setItem('donation', JSON.stringify(addedDonationArray))
+        swal("Good job!", "You Donate Successfully", "success");
+
+    }
+    else{
+            swal("Error!", "No duplicate !", "error");
+           } 
+}
+
+    // const addedDonationArray = [];
+    // const donationItems = JSON.parse(localStorage.getItem("donation"));
+
+    // if (!donationItems) {
+    //   addedDonationArray.push(card)
+    //   localStorage.setItem("donation", JSON.stringify(addedDonationArray))
+    //   swal("Good job!", "You Donate Successfully", "success");
+    // } else {
+    //   const isExists = donationItems.find((card) => card.id == id)
+
+    //   if(!isExists){
+    //     addedDonationArray.push(...donationItems, card);
+    //     localStorage.setItem("donation", JSON.stringify(addedDonationArray)); 
+    //     swal("Good job!", "You Donate Successfully!", "success");
+    //   }
+    //      
+    // }   
   };
 
   return (
