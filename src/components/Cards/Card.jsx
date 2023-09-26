@@ -4,7 +4,6 @@ const Card = ({ card }) => {
   const { id, title, image, catagory } = card || {};
 
   return (
-
    <div>
    <Link to={`/cards/${id}`}>
    <div>       
@@ -15,7 +14,7 @@ const Card = ({ card }) => {
         </div>
         <div className="p-3 ">
           <button
-            className="select-none rounded-lg bg-pink-200 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-pink-400 "
+            className="select-none rounded-lg {bgColor} py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-pink-400 "
             type="button"
             data-ripple-light="true"
           >
