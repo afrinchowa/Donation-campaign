@@ -4,7 +4,7 @@ const Cards = ({cards}) => {
     console.log(cards)
     return (
         <div className="py-10">
-            <h1 className="tex-2xl text-center">All catagory donation</h1>
+            
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 py-14">
                 {
                     cards?.map(card =><Card key={card.id} card={card}></Card>)

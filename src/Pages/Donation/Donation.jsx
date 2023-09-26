@@ -26,13 +26,12 @@ const Donation = () => {
                     donation.slice(0,4).map((card) => (<DetailCardForPage key={card.id} card={card}></DetailCardForPage>))
                     }
                 </div>
-                <button onClick={() =>setIsShow(!isShow) } className=" px-5 bg-lime-400 block rounded-lg mx-auto">See All</button>
+                {donation.length >2 && <button onClick={() =>setIsShow(!isShow) } className=" px-5 bg-green-600 block rounded-lg mx-auto">{isShow ? "See less" : "See All"}</button> }
                 
-                </div>}
-        
+                
+                </div>
+                }        
     </div>
- )
-
-  
+ ); 
 };
 export default Donation;
