@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 const Card = ({ card }) => {
-  const { id, title, image, catagory,backgroundColor,textColor } = card || {};
+  const { id, title, image, catagory,catagoryColor,backgroundColor,textColor } = card || {};
 
   return (
    <div>
@@ -13,7 +13,7 @@ const Card = ({ card }) => {
         <img src={image} />
         </div>
         <div className="p-3 ">
-          <button 
+          <button style={{backgroundColor:catagoryColor}}
             className="select-none rounded-lg  py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase bg-slate-400 "
             type="button"
             data-ripple-light="true"

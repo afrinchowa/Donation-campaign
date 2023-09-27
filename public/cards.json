@@ -8,7 +8,8 @@
         "catagory": "Health",
         "price": "$290",
         "backgroundColor": "#cfe2f3",
-         "textColor": "#3d85c6"
+         "textColor": "#3d85c6",
+         "catagoryColor": "#0198E1 "
 
       },
       {
@@ -19,7 +20,9 @@
         "catagory": "Education",
         "price": "$290",
         "backgroundColor": "#ea9999",
-         "textColor": "#f25050"
+         "textColor": "#f25050",
+         "catagoryColor": "#E9967A "
+         
       },
       {
         "id": 3,
@@ -29,7 +32,8 @@
         "catagory": "Food",
         "price": "$290",
         "backgroundColor": "#f9cb9c",
-         "textColor": "#e69138"
+         "textColor": "#e69138",
+         "catagoryColor": "#E9C2A6 "
       },
     
       {
@@ -40,7 +44,8 @@
         "catagory": "Clothing",
         "price": "$290",
         "backgroundColor": "#b6d7a8",
-         "textColor": "#6aa84f"
+         "textColor": "#6aa84f",
+         "catagoryColor": "#BCEE68 "
       },
       {
         "id": 5,
@@ -50,7 +55,8 @@
         "catagory": "Food",
         "price": "$290",
         "backgroundColor": "#f9cb9c",
-         "textColor": "#e69138"
+         "textColor": "#e69138",
+         "catagoryColor": "#E9C2A6 "
 
       },
       {
@@ -61,7 +67,8 @@
         "catagory": "Clothing",
         "price": "$290",
         "backgroundColor": "#b6d7a8",
-         "textColor": "#6aa84f"
+         "textColor": "#6aa84f",
+         "catagoryColor": "#BCEE68 "
        
       },
    
@@ -74,7 +81,8 @@
         "catagory": "Education",
         "price": "$290",
         "backgroundColor": "#ea9999",
-         "textColor": "#f25050"
+         "textColor": "#f25050",
+         "catagoryColor": "#E9967A "
       },
       {
         "id": 8,
@@ -84,7 +92,8 @@
         "catagory": "Health",
         "price": "$290",
         "backgroundColor": "#cfe2f3",
-         "textColor": "#3d85c6"
+         "textColor": "#3d85c6",
+         "catagoryColor": "#0198E1 "
       },
       {
         "id": 9,
@@ -94,7 +103,8 @@
         "catagory": "Education",
         "price": "$290",
         "backgroundColor": "#ea9999",
-         "textColor": "#f25050"
+         "textColor": "#f25050",
+         "catagoryColor": "#E9967A "
       },
    
     
@@ -106,7 +116,8 @@
         "catagory": "Health",
         "price": "$290",
         "backgroundColor": "#cfe2f3",
-         "textColor": "#3d85c6"
+         "textColor": "#3d85c6",
+         "catagoryColor": "#0198E1 "
       },
       {
         "id": 11,
@@ -116,7 +127,8 @@
         "catagory": "Clothing",
         "price": "$290",
         "backgroundColor": "#b6d7a8",
-         "textColor": "#6aa84f"
+         "textColor": "#6aa84f",
+         "catagoryColor": "#BCEE68 "
       },
       {
         "id": 12,
@@ -126,7 +138,8 @@
         "catagory": "Food",
         "price": "$290",
         "backgroundColor": "#f9cb9c",
-         "textColor": "#e69138"
+         "textColor": "#e69138",
+         "catagoryColor": "#E9C2A6 "
       }
     ]
 

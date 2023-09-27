@@ -1,7 +1,7 @@
 
 import swal from "sweetalert";
 const DetailCardForPage = ({ card }) => {
-  const { id, title, image, description,price } = card || {};
+  const { id, title, image, description,price,textColor } = card || {};
 
   const handleAddToDonation = () => {
 const addedDonationArray =[];
@@ -53,9 +53,9 @@ else{
           <div className="bg-black absolute -mt-20 opacity-70   w-[98vh] h-20 ml-64  ">
           
           </div>
-          <button
+          <button style={{backgroundColor:textColor }}
             onClick={handleAddToDonation}
-            className=" absolute -mt-[60px] ml-72 middle none center rounded-lg bg-pink-500 py-3 px-6 font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ml-4 mt-4"
+            className=" absolute -mt-[65px] ml-72 middle none center rounded-lg bg-pink-500 py-3 px-6 font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ml-4 mt-4"
             data-ripple-light="true"
           >
             Donate {price}
